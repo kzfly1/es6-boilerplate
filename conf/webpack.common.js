@@ -27,18 +27,12 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: "pre",
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "eslint-loader"
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            plugins: ['lodash','transform-decorators-legacy'],
+            plugins: ['lodash', 'transform-decorators-legacy'],
             presets: ['env']
           }
         }
