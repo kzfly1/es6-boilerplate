@@ -46,6 +46,7 @@
     "webpack-merge": "4.1.0"
   },
   "dependencies": {
+    "es6-boilerplate": "file:",
     "lodash": "4.17.21"
   }
 }
